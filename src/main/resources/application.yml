@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: spring-lab
+
+server:
+  port: 8085
+
+app:
+  owner: Serik Darkhan
+  group: IT1CCO-2504
+  mail:
+    from: no-reply@iitu.kz
+    retry-count: 3
+    timeout: 5s
+    enabled: true
+  pagination:
+    default-size: 20
+    max-size: 200
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,env,configprops,conditions
+
+logging:
+  level:
+    kz.iitu: INFO
