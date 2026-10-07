@@ -16,6 +16,8 @@ app:
   pagination:
     default-size: 20
     max-size: 200
+  aspect:
+    slow-threshold-ms: 200
 
 management:
   endpoints:
